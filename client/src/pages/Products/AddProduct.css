@@ -1,0 +1,77 @@
+.body {
+    background: linear-gradient(to bottom, #242e38, #9BA8AB);
+}
+
+.img {
+    width: 300px;
+}
+
+.add-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1 {
+    color: rgb(175, 181, 194);
+    margin-bottom: 5px;
+}
+.addproduct-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.878);
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 0;
+}
+
+form {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(189, 208, 225);
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+}
+
+button {
+    border: none;
+    background-color:  #242e38;
+    padding: 15px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+button:hover {
+    background-color: #054d9aaf;
+    cursor: pointer;
+}
+
+p .link{
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 6px;
+    color: #333f4b;
+    align-items: center;
+    justify-content: center;
+}
