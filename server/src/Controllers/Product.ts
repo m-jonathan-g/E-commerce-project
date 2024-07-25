@@ -15,12 +15,13 @@ export const upload = multer({ storage: storage })
 
 export const createProduct = async (req:Request, res:Response) => {
      
-    const {name, description, price, category, productionDate} = req.body
+    const {name, description, price, category, subCategory, productionDate} = req.body
     const product = new ProductModel({
         name, 
         description, 
         price, 
         category, 
+        subCategory,
         productionDate,
     })
 
@@ -46,9 +47,21 @@ export const createProduct = async (req:Request, res:Response) => {
 }
 
 export const getProducts = async (req:Request, res:Response) => {
+
+    const {category, subCategory} = req.query
+
     try{
-        const products = await ProductModel.find().populate('images')
+        let query: any;
+        if (category) {
+           query = {category: category}
+        }
+        if (subCategory) {
+            query = {subCategory: subCategory}
+        }
+       
+        const products = await ProductModel.find(query).populate('images')
         res.status(200).json({products})
+        
     }catch (error) {
         res.status(500).json({message: 'Something went wrong!'})
     }

@@ -9,6 +9,7 @@ interface ProductType {
   description: string;
   price: number;
   category: string;
+  subCategory: string;
   productionDate: Date;
   images: File[];
 }
@@ -20,6 +21,7 @@ export const AddProduct: React.FC = () => {
     description: '',
     price: 0,
     category: '',
+    subCategory: '',
     productionDate: new Date(),
     images: [],
   })
@@ -49,6 +51,7 @@ export const AddProduct: React.FC = () => {
     formData.append('description', product.description);
     formData.append('price', product.price.toString());
     formData.append('category', product.category);
+    formData.append('subCategory', product.subCategory);
     formData.append('productionDate', product.productionDate.toISOString());
     product.images.forEach((image) => {
       formData.append('images', image);
@@ -67,6 +70,7 @@ export const AddProduct: React.FC = () => {
         description: '',
         price: 0,
         category: '',
+        subCategory: '',
         productionDate: new Date(),
         images: [],
       })
@@ -125,11 +129,21 @@ export const AddProduct: React.FC = () => {
         </label>
         <br />
         <label>
+          Sub-category:
+          <input
+             type='text'
+             name='subCategory'
+             value={product.subCategory}
+             onChange={handleInputChange}
+          />
+        </label>
+        <br />
+        <label>
           Production Date:
           <input
              type='date'
              name='productionDate'
-             value={product.productionDate.toISOString().split('T')[0]}
+             value={product.productionDate.toISOString().split( 'T') [0]}
              onChange={handleInputChange}
           />
         </label>

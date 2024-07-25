@@ -1,9 +1,14 @@
+
+import { Hero } from '../../components/Hero/Hero'
+import { Navbar } from '../../components/Navbar/Navbar'
 import './Home.css'
 
 const HomePage = () => {
     return (
         <div className="home-page">
-            <h1>Home Page</h1>
+            <Navbar/>
+            <Hero/>
+
         </div>
     )
 }
