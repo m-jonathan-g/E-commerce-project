@@ -13,14 +13,21 @@ const HomePage = () => {
                 <div className='menu-prompt'>
                     <h2>Explore Our Menu</h2>
                    <Link to={'/menu'}>
-                   <div className='image-container'>
                    <img src="/mains.jpg" alt="" />
-                   <div className='overlay'> </div>
-                   <div className='explore-menu-text'>Explore Menu</div>
-                   </div>
+                   <div className='hover-text'>Explore Menu</div>
                    </Link>
-                   <Link to={'/menu'}><button>Place an Order</button></Link>
+                   <button><Link to={'/menu'} className='menu-order'>Place an Order</Link></button>
                 </div>
+            </div>
+            <div className='home-delivery'>
+            <h1>Delivery Hours</h1>
+            <div className='hours'>
+            <p><span>Monday - Friday: </span> 7:00 AM - 10:00 PM</p>
+            <hr />
+              <p> <span>Saturday: </span> 9:00 PM - 11:00 PM</p>
+             <hr />
+              <p><span>Sunday:</span> 10:00 PM - 9:00 PM</p>
+              </div>
             </div>
         </div>
     )

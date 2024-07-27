@@ -7,7 +7,7 @@ export const MenuDisplay = () => {
     <>
     <Navbar/>
     <div className="menu-display">
-       <img src="/menu2.png" alt="" className="menu-banner"/>
+       
         <div className="menu-category">
           
         <ul className="menu">

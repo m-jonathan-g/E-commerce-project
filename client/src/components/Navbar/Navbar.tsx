@@ -70,6 +70,7 @@ export const Navbar = () => {
                 <h2 className='dropdown-item-title'>My Profile</h2>
                 <h3><Link to={'/addproduct'} className='dropdown-item'>Add Product</Link></h3>
                 <h3><Link to={'/cart'} className='dropdown-item'>Checkout</Link></h3>
+                <h3><Link to={'/contact'} className='dropdown-item'>Contact Us</Link></h3>
                 <h3><Link to={'/'} className='dropdown-item'>Gift Cards</Link></h3>
                 {user.isAdmin && (
                     <Link to='/admin' className='dropdown-item'>

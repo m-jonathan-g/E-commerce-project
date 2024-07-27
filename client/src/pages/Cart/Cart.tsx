@@ -79,7 +79,7 @@ export const Cart = () => {
           ): (
             <div>
               <h2>Your Cart is Empty.</h2>
-              <p><Link to={'/menu'}>Add Item to Cart</Link></p>
+              <p><Link to={'/menu'} className='add-item-empty'>Add Item to Cart</Link></p>
               </div>
           )}
           </div>
