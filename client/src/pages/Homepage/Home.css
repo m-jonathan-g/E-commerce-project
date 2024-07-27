@@ -4,6 +4,11 @@
     align-items: center;
     width: 100%;
     margin-top: 30px;
+   
+}
+
+.home-container {
+    background: url(/wood.jpg) no-repeat center center/cover;
 }
 
 .menu-prompt {
@@ -32,7 +37,7 @@
 }
 
 .menu-prompt img:hover {
-    opacity: 0.5;
+    opacity: 0.7;
   }
 
 .menu-prompt .hover-text {
@@ -40,7 +45,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black;
+    color: white;
     font-size: 32px;
     font-weight: bold;
     text-align: center;

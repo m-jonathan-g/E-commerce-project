@@ -8,6 +8,7 @@ const HomePage = () => {
     return (
         <div className="home-page">
             <Navbar/>
+            <div className='home-container'>
             <Hero/>
             <div className="home-page-content">
                 <div className='menu-prompt'>
@@ -29,6 +30,7 @@ const HomePage = () => {
               <p><span>Sunday:</span> 10:00 PM - 9:00 PM</p>
               </div>
             </div>
+        </div>
         </div>
     )
 }
