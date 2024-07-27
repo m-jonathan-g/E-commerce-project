@@ -1,0 +1,145 @@
+.contact-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background: url(/dwood.jpg) no-repeat center center/cover;
+  }
+  
+  .contact-container h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #0e1823;
+    color:  #edf1fa;
+    padding: 30px;
+    border-radius: 25px;
+  }
+
+  .contact-container h2 {
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #b1bbcd;
+  }
+  
+  .contact-container h3 {
+    margin-top: 20px;
+    color: #8c8787;
+    font-size: 26px;
+  }
+  
+  .feedback-form {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .feedback-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .feedback-form label {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .feedback-form input,
+  .feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 14px;
+  }
+  
+  .feedback-form input::placeholder,
+  .feedback-form textarea::placeholder {
+    color: #aaa;
+  }
+  
+  .feedbackbutton {
+    padding: 10px 20px;
+    background-color: #333f4b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .feedbackbutton:hover {
+    background-color: green;
+  }
+  
+  .contact-box {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-box h2 {
+    margin-bottom: 20px;
+  }
+  
+
+  .contact-align {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .email-container,
+  .call-container,
+  .sms-container {
+    padding: 8px;
+    padding-bottom: 6px;
+    background: #b1bbcd;
+    border: none;
+    border-radius: 15px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0)
+  }
+
+  
+  .email-container:hover,
+  .call-container:hover,
+  .sms-container:hover{
+    transform: scale(0.9);
+  }
+  
+  .contact-box img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .socials-box {
+    margin-top: 40px;
+  }
+  
+  .socials-box h2 {
+    margin-bottom: 20px;
+  }
+  
+  .socials-container {
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .socials-img {
+    width: 50px;
+    height: 30px;
+  }
+  
+  .socials-container a {
+    display: block;
+  }

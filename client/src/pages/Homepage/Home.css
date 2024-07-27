@@ -1,0 +1,31 @@
+.home-page-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.menu-prompt h2 {
+    font-size: 1.6rem;
+    margin: 20px 0;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #0e1823;
+    color:  #edf1fa;
+    padding: 30px;
+    border-radius: 25px;
+}
+
+.menu-prompt img {
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.menu-prompt img:hover {
+    opacity: 0.9;
+  }
+  
+  

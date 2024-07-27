@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from "react"
 import axios from "axios"
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { Navbar } from "./Navbar/Navbar";
+import { Navbar } from "../Navbar/Navbar";
+import { useCart } from "../../context/CartContext";
+import './ProdbyCat.css'
+import { useAuth } from "../../context/AuthContext";
+
 
 interface Product {
     name: string;
@@ -19,6 +23,9 @@ export const ProductByCategory: React.FC = () => {
   
     const { category, subCategory } = useParams<{category:string; subCategory?:string}>()
     const [products, setProducts] = useState<Product[]>([]);
+    const { addToCart } = useCart()
+    const {isLoggedIn} = useAuth()
+    const navigate = useNavigate()
 
     useEffect(() => {
         const fetchProducts = async () => {
@@ -35,26 +42,39 @@ export const ProductByCategory: React.FC = () => {
 
         fetchProducts()
     }, [category, subCategory])
+
+    const handleAddToCart = (product: Product) =>{
+        if (isLoggedIn) {
+            addToCart(product)
+        } else {
+            alert('Log in to add items to your cart')
+            navigate('/login')
+        }
+    }
   
     return (
     <div>
         <Navbar/>
+        <div className="product-container">
         <h1>BLUE FARM'S {category?.toUpperCase()} MENU</h1>
         <h3>  {subCategory? ` ${subCategory.toUpperCase()}` : ''} SELECTION</h3>
-        <div className="product-list">
+        <div className="product-grid">
         {products.map(product => (
             <div key={product.name} className="product-item">
-                <h2>{product.name}</h2>
+                <h2 className="pdct-name">{product.name}</h2>
                 {product.images.length > 0 && (
-                    <img src={`http://localhost:2000/${product.images[0].path}`} alt={product.name} />
+                    <img src={`http://localhost:2000/${product.images[0].path}`} alt={product.name} className="product-image"/>
                 )}
-                <p>{product.description}</p>
-                <p>Price(Kshs): {product.price}</p>
-               
+                <p className="description">{product.description}</p>
+                <p className="price">Price(Kshs): {product.price}</p>
+                <button onClick={()=> handleAddToCart(product)}>Add to cart</button>
             </div>     
         ))}
         </div>
-        <Link to={'/menu'} >Back to Main Menu</Link>
-    </div>
+       
+        </div>
+        <Link to={'/menu'} className="link"><span className="link-span">Back to Main Menu</span></Link>
+        </div>
+    
   )
 }

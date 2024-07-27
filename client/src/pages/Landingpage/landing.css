@@ -1,11 +1,90 @@
 .landing-page {
-    background: linear-gradient(to bottom, #242e38, #9BA8AB);
-    width: 100vw;
-    height: 100vh;
+    background: url(/board.jpg) no-repeat center center/cover ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.link {
+.landing-page__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  padding: 4px;
+}
+
+.landing-page__right,
+.landing-page__left {
+  flex: 1;
+}
+
+.landing-page__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landing-page__right img {
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.landing-page__right button {
+  padding: 20px;
+  background-color: #31404f;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.place-order {
     text-decoration: none;
-    color: white;
+    color: whitesmoke;
+    font-size: 30px;
 }
 
+.landing-page__right button:hover {
+  background-color: #202933;
+  color: whitesmoke;
+  transform: scale(1.2);
+}
+
+.landing-page__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-page__left ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.landing-page__left li {
+  margin-bottom: 70px;
+
+}
+
+.landing-page__left .link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.landing-page__left .link:hover {
+  color:  #202933;
+  font-weight: 800;
+  transform: scale(1.2);
+}
+
+.landing-page__left hr {
+    border: 3px white solid;
+    background-color: white;
+
+}

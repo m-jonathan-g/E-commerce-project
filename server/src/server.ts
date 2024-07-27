@@ -1,8 +1,9 @@
-import express, { Express, Request, Response } from 'express';
+import express, { Express } from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import { handleProductRoutes } from './Routes';
+import authRoutes from './Routes/AuthRoutes'
 
 dotenv.config();
 
@@ -26,7 +27,8 @@ const uri: string =
     }
 })();
 
-handleProductRoutes(app)
+app.use('/api', authRoutes);
+handleProductRoutes(app);
 
 const PORT: string | number = process.env.PORT || 2000;
 

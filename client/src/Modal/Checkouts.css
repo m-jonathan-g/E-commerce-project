@@ -1,0 +1,62 @@
+
+.checkout-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2f3c48;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .checkout-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .checkout-modal form {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .checkout-modal label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .checkout-modal input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .checkout-modal button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #2f3c48;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .checkout-modal button:hover{
+    background-color: green;
+  }
+  
+  .checkout-modal button[type='button'] {
+    background-color: rgba(255, 0, 0, 0.677);
+    color: white;
+  }

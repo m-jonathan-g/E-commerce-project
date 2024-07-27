@@ -7,104 +7,128 @@ export const MenuDisplay = () => {
     <>
     <Navbar/>
     <div className="menu-display">
-        <h1 className="heading">Blue Farm  Menu</h1>
+       <img src="/menu2.png" alt="" className="menu-banner"/>
         <div className="menu-category">
-        <h2 className="selection-h2">Selections Available</h2>
-        <ul>
+          
+        <ul className="menu">
           <li>
            <h2 className="selection-title">Breakfast</h2>
          
-            <ul>
+            <ul className="menu-subselections">
               <li>
-                <Link to="/menu/breakfast/sandwiches">Sandwiches</Link>
+                <Link to="/menu/breakfast/sandwiches"><img src="/sandwiches.jpg" alt="" className="menu-image" /></Link>
+                <h2>Sandwiches</h2>
               </li>
               <li>
-                <Link to="/menu/breakfast/eggs">Eggs</Link>
+                <Link to="/menu/breakfast/eggs"><img src="/egg2.jpg" alt=""  className="menu-image" /></Link>
+                <h2>Eggs</h2>
               </li>
               <li>
-                <Link to="/menu/breakfast/cakes">Cakes</Link>
+                <Link to="/menu/breakfast/cakes"><img src="/cakes.jpg" alt=""  className="menu-image"/></Link>
+                <h2>Cakes</h2>
               </li>
               <li>
-                <Link to="/menu/breakfast/pancakes">Pancakes</Link>
+                <Link to="/menu/breakfast/pancakes"><img src="/pancake.jpg" alt="" className="menu-image"/></Link>
+                <h2>Pancakes</h2>
               </li>
              
               <li>
-                <Link to="/menu/breakfast/breads">Breads & Buns</Link>
+                <Link to="/menu/breakfast/breads"><img src="/buns.jpg" alt=""  className="menu-image"/></Link>
+                <h2>Breads & Buns</h2>
               </li>
               <li>
-                <Link to="/menu/breakfast/fruits">Fruit Meals</Link>
+                <Link to="/menu/breakfast/fruits"><img src="/fruits-breakfast.jpg" alt="" className="menu-image"/></Link>
+                <h2>Fruits</h2>
               </li>
               <li>
-                <Link to="/menu/breakfast/breakfast-extras">Extras</Link>
+                <Link to="/menu/breakfast/breakfast-extras"><img src="/b-extra.jpg" alt="" className="menu-image" /></Link>
+                <h2>Breakfast Extras</h2>
               </li>
             </ul>
           </li>
           <li>
            <h2  className="selection-title">Main Course</h2>
           
-           <ul>
+           <ul className="menu-subselections">
             <li>
-              <Link to="/menu/maincourse/pizzas">Pizzas</Link>
+              <Link to="/menu/maincourse/pizzas"><img src="/pizza.jpg" alt="" className="menu-image" /></Link>
+              <h2>Pizzas</h2>
             </li>
             <li>
-              <Link to="/menu/maincourse/seafood">Sea Food</Link>
+              <Link to="/menu/maincourse/seafood"><img src="/seafood.jpg" alt="" className="menu-image" /></Link>
+              <h2>Seafood</h2>
             </li>
             <li>
-              <Link to="/menu/maincourse/rice">Rice Dishes</Link>
+              <Link to="/menu/maincourse/rice"><img src="/rice.jpg" alt="" className="menu-image" /></Link>
+              <h2>Rice Dishes</h2>
             </li>
             <li>
-              <Link to="/menu/maincourse/combos">Combos</Link>
+              <Link to="/menu/maincourse/combos"><img src="/combo2.jpg" alt="" className="menu-image" /></Link>
+              <h2>Combos</h2>
             </li>
             <li>
-              <Link to="/menu/maincourse/meats">Meat Dishes</Link>
+              <Link to="/menu/maincourse/meats"><img src="meat.jpg" alt="" className="menu-image" /></Link>
+              <h2>Meat Dishes</h2>
             </li>
             <li>
-              <Link to="/menu/maincourse/vegan">Vegan Dishes</Link>
+              <Link to="/menu/maincourse/vegan"><img src="/vegan.jpg" alt="" className="menu-image" /></Link>
+              <h2>Vegan Dishes</h2>
             </li>
             <li>
-              <Link to="/menu/maincourse/kids">Kiddie Meals</Link>
+              <Link to="/menu/maincourse/kids"><img src="/kids.jpg" alt="" className="menu-image" /></Link>
+              <h2>Kiddie Meals</h2>
             </li>
             <li>
-              <Link to="/menu/maincourse/burgers">Burgers</Link>
+              <Link to="/menu/maincourse/burgers"><img src="/burger.jpg" alt="" className="menu-image" /></Link>
+              <h2>Burgers</h2>
             </li>
             <li>
-              <Link to="/menu/maincourse/mains-extras">Extras</Link>
+              <Link to="/menu/maincourse/mains-extras"><img src="/extra.jpg" alt="" className="menu-image" /></Link>
+              <h2>Main Course Extras</h2>
             </li>
            </ul>
           </li>
           <li>
             <h2  className="selection-title">Drinks</h2>
           
-            <ul>
+            <ul className="menu-subselections">
               <li>
-                <Link to="/menu/drinks/softdrinks">Soft Drinks</Link>
+                <Link to="/menu/drinks/softdrinks"><img src="/softdrinks.jpg" alt="" className="menu-image" /></Link>
+                <h2>Soft Drinks</h2>
               </li>
               <li>
-                <Link to="/menu/drinks/fruitdrinks">Fruit Drinks</Link>
+                <Link to="/menu/drinks/fruitdrinks"><img src="/fruitdrink.jpg" alt="" className="menu-image" /></Link>
+                <h2>Fruit Drinks</h2>
               </li>
               <li>
-                <Link to="/menu/drinks/smoothies">Smoothies</Link>
+                <Link to="/menu/drinks/smoothies"><img src="/smoothie.jpg" alt="" className="menu-image" /></Link>
+                <h2>Smoothies</h2>
               </li>
               <li>
-                <Link to="/menu/drinks/yoghurts">Yoghurts</Link>
+                <Link to="/menu/drinks/yoghurts"><img src="/yoghurt.jpg" alt="" className="menu-image" /></Link>
+                <h2>Yoghurts</h2>
               </li>
               <li>
-                <Link to="/menu/drinks/milkshakes">Milk Shakes</Link>
+                <Link to="/menu/drinks/milkshakes"><img src="/milkshake.jpg" alt="" className="menu-image" /></Link>
+                <h2>Milkshakes</h2>
               </li>
               <li>
-                <Link to="/menu/drinks/tea & coffee">Tea & Coffee</Link>
+                <Link to="/menu/drinks/tea & coffee"><img src="/coffee.jpg" alt="" className="menu-image" /></Link>
+                <h2>Tea & Coffee</h2>
               </li>
             </ul>
           </li>
           <li>
             <h2 className="selection-title">Desserts</h2>
            
-            <ul>
+            <ul className="menu-subselections">
               <li>
-                <Link to="/menu/desserts/icecreams">Ice Creams</Link>
+                <Link to="/menu/desserts/icecreams"><img src="/icescreams.jpg" alt="" className="menu-image" /></Link>
+                <h2>Ice Creams</h2>
               </li>
               <li>
-                <Link to="/menu/desserts/sweets">Sweets</Link>
+                <Link to="/menu/desserts/sweets"><img src="/macaroon.jpg" alt="" className="menu-image" /></Link>
+                <h2>Sweets</h2>
               </li>
             </ul>
           </li>

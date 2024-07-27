@@ -9,9 +9,10 @@ import { AddProduct } from './pages/Products/AddProduct'
 import { MenuDisplay } from './pages/Menu/MenuDisplay'
 import { Contact } from './pages/Contact/Contact'
 import { About } from './pages/About/About'
-import { ProductByCategory } from './components/ProductByCategory'
+import { ProductByCategory } from './components/ProductCategory/ProductByCategory'
 import { Cart } from './pages/Cart/Cart'
 import { Footer } from './components/Footer/Footer'
+import AdminDash from './components/AdminDash/Admin'
 
 
 const App: React.FC = () => {
@@ -28,6 +29,7 @@ const App: React.FC = () => {
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/cart' element={<Cart/>}/>
       <Route path='/menu/:category/:subCategory?' element={<ProductByCategory />} />
+      <Route path='/admin' element={<AdminDash/>}/>
     </Routes>
     <Footer/>
    </Router>
